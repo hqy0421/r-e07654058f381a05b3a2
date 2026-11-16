@@ -9,6 +9,7 @@ __version__: Final[str] = _version
 
 from datasketch.aio import AsyncMinHashLSH  # Instantiation requires motor/redis.asyncio; import itself is always safe.
 from datasketch.b_bit_minhash import bBitMinHash
+from datasketch.dualpath import DualPathResult, DualPathRetriever
 from datasketch.hashfunc import sha1_hash32, sha1_hash64
 from datasketch.hnsw import HNSW
 from datasketch.hyperloglog import HyperLogLog, HyperLogLogPlusPlus
@@ -27,6 +28,8 @@ WeightedMinHashLSHForest = MinHashLSHForest
 __all__ = [
     "HNSW",
     "AsyncMinHashLSH",
+    "DualPathResult",
+    "DualPathRetriever",
     "HyperLogLog",
     "HyperLogLogPlusPlus",
     "LeanMinHash",

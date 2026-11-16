@@ -91,3 +91,13 @@ HNSW
 .. autoclass:: datasketch.HNSW
     :members:
     :special-members:
+
+Dual Path Retriever
+-------------------
+
+.. autoclass:: datasketch.DualPathRetriever
+    :members:
+    :special-members:
+
+.. autoclass:: datasketch.DualPathResult
+    :members:
